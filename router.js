@@ -1,6 +1,6 @@
 const {Router}=require('express');
 const { getMensaje, getTask, postTask, editTask, deleteTask, editEstado } = require('./controllers/list-edit-router');
-const { getCompleted, getUnCompleted } = require('./controllers/list-view-router');
+const { getCompleted, getIncompleted } = require('./controllers/list-view-router');
 
 const router = Router();
 router.get('/',getMensaje);
@@ -13,6 +13,6 @@ router.delete('/delete_task/:id',deleteTask);
 
 
 router.get('/task_completed',getCompleted);
-router.get('/task_un_completed',getUnCompleted);
+router.get('/task_un_completed',getIncompleted);
 
 module.exports = router;

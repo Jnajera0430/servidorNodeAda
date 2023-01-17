@@ -5,7 +5,7 @@ const getCompleted =(req,res)=>{
     const taskCompleted = db?.filter(task=>task.estado == true);
     res.json({taskCompleted});
 }
-const getUnCompleted =(req,res)=>{
+const getIncompleted =(req,res)=>{
     const db = JSON.parse(fs.readFileSync('./db/db.json','utf8'));
     const taskCompleted = db?.filter(task=>task.estado == false);
     res.json({taskCompleted});
@@ -13,5 +13,5 @@ const getUnCompleted =(req,res)=>{
 
 module.exports={
     getCompleted,
-    getUnCompleted
+    getIncompleted
 }
