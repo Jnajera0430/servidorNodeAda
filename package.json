@@ -7,5 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jnajera",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0",
+    "uuidv4": "^6.2.13"
+  }
 }
