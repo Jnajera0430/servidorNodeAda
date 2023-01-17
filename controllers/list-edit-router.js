@@ -49,7 +49,6 @@ const deleteTask =(req,res)=>{
 
 const editEstado = (req,res)=>{
     const {id} = req.params;
-    const {body} = req;
     const db = JSON.parse(fs.readFileSync('./db/db.json','utf-8'));
     db.forEach(task=>{
         if(task.id == id){
