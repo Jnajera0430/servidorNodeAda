@@ -3,9 +3,7 @@ const { uuid } = require('uuidv4');
 
 
 const getMensaje = (req,res)=>{
-    const {body} = req; 
-    res.send(`saludos \n ${JSON.stringify(body)}`);
-    res.end();
+    res.json({token:req.token})
 }
 
 const getMensajeIdioma = (req,res)=>{
