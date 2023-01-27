@@ -3,10 +3,26 @@ const { uuid } = require('uuidv4');
 
 
 const getMensaje = (req,res)=>{
-    const {body} = req; 
-    res.send(`saludos \n ${JSON.stringify(body)}`);
+    res.json({token:req.token})
+}
+
+const getMensajeIdioma = (req,res)=>{
+    const {idioma} = req.params;
+    const {nombre} = req.body;
+    if(idioma == 'es')return res.status(200).send(`saludos  mi amigo ${nombre} bienvenido a mi aplicacion`);
+    if(idioma == 'en')return res.status(200).send(`hellow mafrend ${nombre} welcome to my app`);
     res.end();
 }
+
+const getConteoDeNum = (req,res)=>{
+    const {num}=req.params;
+    let array=[];
+    for (let index = 0; index <= num; index++) {
+        array = [...array,index];
+    }
+    res.status(200).json(`Conteo: ${array}`);
+}
+
 
 const getTask = (req,res)=>{
     const db = JSON.parse(fs.readFileSync('./db/db.json','utf-8'));
@@ -49,7 +65,6 @@ const deleteTask =(req,res)=>{
 
 const editEstado = (req,res)=>{
     const {id} = req.params;
-    const {body} = req;
     const db = JSON.parse(fs.readFileSync('./db/db.json','utf-8'));
     db.forEach(task=>{
         if(task.id == id){
@@ -67,5 +82,7 @@ module.exports = {
     postTask,
     editTask,
     deleteTask,
-    editEstado
+    editEstado,
+    getMensajeIdioma,
+    getConteoDeNum
 }
