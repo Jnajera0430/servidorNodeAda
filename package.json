@@ -1,0 +1,18 @@
+{
+  "name": "express-tasklist",
+  "version": "1.0.0",
+  "description": "lista de tareas para ADA-Schools",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js"
+  },
+  "author": "Jnajera0430",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
+}

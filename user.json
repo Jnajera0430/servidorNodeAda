@@ -1,0 +1,26 @@
+[
+  {
+    "username": "elpepe",
+    "pasword": "algo12345",
+    "rol":"admin"
+  },
+  {
+    "username": "elpepe2",
+    "pasword": "algo12345",
+    "rol":"user"
+  },
+  {
+    "username": "elpepe3",
+    "pasword": "algo12345",
+    "rol":"user"
+  },
+  {
+    "username": "elpepe4",
+    "pasword": "algo12345",
+    "rol":"user"
+  },{
+    "username": "elpepe5",
+    "pasword": "algo12345",
+    "rol":"user"
+  }
+]

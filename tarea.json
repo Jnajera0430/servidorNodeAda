@@ -1,0 +1,21 @@
+[
+    {
+      "id":"hfahkadfkladskadfs",
+      "tarea": "Bañarme",
+      "descripcion": "no me he banñado",
+      "idUser":"elpepe"
+    },
+    {
+        "id":"hfahkghjkfdkls",
+        "tarea": "salir a pasear",
+        "descripcion": "no he salido desde hace rato",
+        "idUser":"elpepe2"
+    },
+    {
+        "id":"hfahwuieofdskmskds",
+        "tarea": "trotar",
+        "descripcion": "ahora si",
+        "idUser":"elpepe2"
+    }
+  ]
+  
